@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form class="main-form" action="/generate" method="POST">
+    <label for="place">Enter your location:</label>
+    <input type="text" id="place" name="location" required class="action-input">
+
+    <label for="num_songs">How many songs would you like in your playlist?</label>
+    <input type="number" id="num_songs" name="num_songs" value="10" min="1" max="50" required class="action-input">
+
+    <button type="submit" class="submit-button">Generate Playlist</button>
+</form>
+{% endblock %}

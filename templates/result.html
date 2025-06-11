@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="result-section">
+    <h2>Weather in <span class="location-name">{{ location }}</span></h2>
+    <p><strong>Temperature:</strong> <span class="temp-value">{{ temp }} °F</span></p>
+    <p><strong>Condition:</strong> <span class="condition-type">{{ type }}</span></p>
+
+    <h3>Suggested Songs:</h3>
+    <ul>
+        {% for song in songs %}
+            <li class="song-list">{{ song }}</li>
+        {% endfor %}
+    </ul><br><br>
+
+    <a href="{{ url_for('login') }}" class="submit-button">Create Spotify Playlist</a>
+</div>
+{% endblock %}

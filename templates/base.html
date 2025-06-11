@@ -1,10 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Weatherbox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
 </head>
 <body>
+    <header>
+        <h1 class="main-header">Weatherbox</h1>
+        <p>Create a playlist based on your local weather</p>
+    </header>
 
+    <main>
+      {% block content %}{% endblock %}
+    </main><br><br>
+
+    <footer>
+        <p>Created by Carson Nakagawara</p>
+        <p>
+          Using
+          <a href="https://openweathermap.org/" target="blank">OpenWeather</a> and
+          <a href="https://open.spotify.com/" target="blank">Spotify</a>.
+        </p>
+    </footer>
 </body>
 </html>
