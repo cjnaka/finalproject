@@ -1,3 +1,0 @@
-weather_key= "c40ee57cac28f6dbbfb2766368548476"
-spotify_client_id = "bc0156ba2a754d85aef02fa9bbe5804f"
-spotify_client_secret = "7dd001d364bf4ecca3d0cc86c8203bbb"
